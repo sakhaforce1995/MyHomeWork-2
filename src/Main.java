@@ -1,108 +1,172 @@
 public class Main {
-        public static void main(String[] args){
-            var dog = 8;
-            var cat = 3.6;
-            var paper = 763789;
-            System.out.println("Собака " + dog);
-            System.out.println("Кошка " + cat);
-            System.out.println("Бумага " + paper);
+    public static void main(String[] args) {
+        //Задача 1
+        System.out.println("Задания 1");
 
-            var box = 5;
-            System.out.println(box);
+        int money = 1000000000;
+        System.out.println("Было " + money + " монеты");
+        money = money - 100000000;
+        System.out.println("Теперь осталось " + money + " монетов");
 
-            box = box + 2;
-            System.out.println(box);
+        byte a = 6;
+        byte b = 4;
+        System.out.println("Было утро в " + a + " часов");
+        System.out.println(a + b + " часов теперь");
 
-            box = box - 3;
-            System.out.println(box);
+        short c = 100;
+        short d = 100;
+        System.out.println("short c = " + c + " short d = " + d);
+        c = 150;
+        System.out.println(c);
 
-            box = box * 3;
-            System.out.println(box);
+        long e = 1000L;
+        long f = 2000L;
+        System.out.println("long e = " + e + " long f = " + f);
+        f = f + 1000L;
+        System.out.println("f = f + 1000 " + f);
 
-            box = box / 4;
-            System.out.println(box);
+        float one = 2.5f;
+        float two = 1.2f;
+        System.out.println("float = " + one + two);
 
-            box = box + 4;
-            System.out.println(box);
+        double oneDouble = 1.25;
+        oneDouble = oneDouble + 1.25;
+        System.out.println("double = " + oneDouble);
 
-            dog = dog - 3;
-            cat = cat - 1.6;
-            paper = paper - 7639;
-            System.out.println("Теперь " + dog + " собак!");
-            System.out.println("Теперь " + cat + " кошек!");
-            System.out.println("Теперь " + paper + " бумагов!");
+        //Задача 2
+        System.out.println("Задания 2");
 
-            var friend = 19;
-            System.out.println(friend + " друзей");
+        double variable1 = 27.12;
+        System.out.println(variable1);
 
-            friend = friend + 2;
-            System.out.println("Теперь на " + friend + " друзей");
+        long variable2 = 987678965549L;
+        System.out.println(variable2);
 
-            friend = friend / 7;
-            System.out.println("Потерял много друзей, теперь на " + friend + " друзья!");
+        float variable3 = 2.786f;
+        System.out.println(variable3);
 
-            var frog = 3.5;
-            System.out.println(frog + " с половиной лягушек");
+        boolean variable4 = false;
+        System.out.println(variable4);
 
-            frog = frog * 10 / 3.5 + 4;
-            System.out.println(frog + " лягушек");
+        char variable5 = 569;
+        System.out.println(variable5);
 
-            frog = frog / 3.5;
-            System.out.println("Потерял много лягушек, теперь на " + frog + " лягушки");
+        short variable6 = -159;
+        System.out.println(variable6);
 
-            frog = frog + 4;
-            System.out.println("Родились " + frog + " лягушонок");
+        int variable7 = 27897;
+        System.out.println(variable7);
 
-            var liftingCapacity = 50;
-            var stuffWeight = 20;
-            var capacityLeft = liftingCapacity - stuffWeight;
-            System.out.println("Еще можно положить " +  capacityLeft + " кг!");
+        byte variable8 = 67;
+        System.out.println(variable8);
 
-            var appleWeight = 2;
-            var orangesWeight = 3;
-            var fruitWeight = appleWeight + orangesWeight;
-            System.out.println("Общий вес фруктов " + fruitWeight + " кг!");
+        //Задача 3
+        System.out.println("Задания 3");
 
-            var meatWeight = 4;
-            var waterWeight = 5;
-            var tomatoesWeight = 2;
-            var cucumbersWeight = 2;
-            var peppersWeight = 2;
-            var zucchiniWeight = 2;
-            var vegetablesWeight = tomatoesWeight + cucumbersWeight + peppersWeight + zucchiniWeight;
-            var productsWeight = fruitWeight + vegetablesWeight + meatWeight + waterWeight;
-            System.out.println("Общий вес продуктов " + productsWeight + " кг");
+        short pupilsInFirstClass = 23;
+        System.out.println("у Людмилы Павловны " + pupilsInFirstClass + " ученика");
 
-            var leftWeight = liftingCapacity - stuffWeight - productsWeight;
-            System.out.println("Места осталось " + leftWeight + " кг!");
+        short pupilsInSecondClass = 27;
+        System.out.println("у Анны Сергеевны " + pupilsInSecondClass + " ученика");
 
-            productsWeight = productsWeight * 2;
-            System.out.println("Теперь вес продуктов " + productsWeight + " кг!");
+        short pupilsInThirdClass = 30;
+        System.out.println("у Екатерины Андреевны " + pupilsInThirdClass + " ученика");
 
-            leftWeight = liftingCapacity - stuffWeight - productsWeight;
-            System.out.println("Теперь места осталось " + leftWeight + " кг!");
+        int totalTeacherStudents = pupilsInFirstClass + pupilsInSecondClass + pupilsInThirdClass;
+        System.out.println("Общие " + totalTeacherStudents + " учеников");
 
-            var overload = (stuffWeight + productsWeight) % liftingCapacity;
-            System.out.println("Перегруз на " + overload + " кг!");
+        short totalPapersTeachers = 480;
+        System.out.println("Три учительницы закупили все вместе " + totalPapersTeachers + " листов бумаги на все три класса");
 
-            var productsInOneCar = productsWeight / 2;
-            System.out.println("Продукт в одной машине теперь " + productsInOneCar + " кг!");
+        int everyStudent = totalPapersTeachers / totalTeacherStudents;
+        System.out.println("На каждого ученика рассчитано " + everyStudent + " листов бумаги");
 
-            short bananas = 200;
-            System.out.println("Бананов " + bananas + " кг!");
+        //Задача 4
+        System.out.println("Задания 4");
+        byte bottles = 16;
+        byte minutes = 2;
+        int productivityPerMinute = bottles / minutes;
+        byte twentyMinutes = 20;
+        System.out.println("За " + twentyMinutes + " минут машина произвела бутылок " + productivityPerMinute * twentyMinutes + " штук");
+        short minutesInDay =  24 * 60;
+        System.out.println("За " + minutesInDay + " минут машина произвела бутылок " + productivityPerMinute * minutesInDay + " штук");
+        int minutesInThreeDays = 3 * minutesInDay;
+        System.out.println("За " + minutesInThreeDays + " минут машина произвела бутылок " + productivityPerMinute * minutesInThreeDays + " штук");
+        int minutesInMonth = 10 * minutesInThreeDays;
+        System.out.println("За " + minutesInMonth + " минут машина произвела бутылок " + productivityPerMinute * minutesInMonth + " штук");
 
-            float sugar = 3;
-            float onePortion = sugar / 4;
-            System.out.println("Одна порция сахара весит " + onePortion + " кг");
+        //Задача 5
+        System.out.println("Задания 5");
 
-            byte a = 1;
-            short b = 1;
-            int c = 1;
-            int d = a + b + c;
-            System.out.println(d);
+        byte totalCans = 120;
+        byte whiteCansPerClass = 2;
+        byte brownCansPerClass = 4;
+        int totalClasses = totalCans/(whiteCansPerClass + brownCansPerClass);
+        int totalWhiteCans = totalClasses * whiteCansPerClass;
+        int totalBrownCans = totalClasses * brownCansPerClass;
+        System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalWhiteCans + " банок белой краски и " + totalBrownCans + " банок коричневой краски");
 
-            float g = a + 1f;
-            System.out.println(g);
+        //Задача 6
+        System.out.println("Задание 6");
+        float bananas = 5f;
+        bananas = bananas * 0.080f;
+        System.out.println("Бананы " + bananas + " грамм");
+        float milk = 00.20f;
+        milk = milk * 01.50f;
+        System.out.println("Молоко " + milk + " грамм");
+        float iceCream = 0.100f;
+        float briquettes = iceCream * 2;
+        System.out.println("Морожное пломбир " + briquettes + " грамм");
+        int egg = 4;
+        float oneEggGramm = egg * 0.070f;
+        System.out.println("Яйца сырые " + oneEggGramm + " грамм");
+        float totalWeight = bananas + milk + briquettes + oneEggGramm;
+        System.out.println("Общий вес " + totalWeight + " кг");
 
-        }
+        //Задача 7
+        System.out.println("Задание 7");
+        int resetWeight = 7000;
+        int lostWeight = 250;
+        int lossWeight2 = 500;
+        int totalWeight1 = resetWeight / lostWeight;
+        int totalWeight2 = resetWeight / lossWeight2;
+        int totalMidWeight = totalWeight1 + totalWeight2;
+        int totalMid2Weight = totalMidWeight / 2;
+        System.out.println("В среднем уйдет " + totalMid2Weight + " дней");
+
+
+        //Задача 8
+        System.out.println("Задание 8");
+        int mashaEmployeeSalary = 67760;
+        int denisEmployeeSalary = 83690;
+        int cristinaEmployeeSalary = 76230;
+        int year = 12;
+        int totalOneYearBefore1 = mashaEmployeeSalary * 12;
+        int mashaEmployeeNew = (mashaEmployeeSalary * 10) / 100;
+        int mashaEmployeeUpSalary = mashaEmployeeNew + mashaEmployeeSalary;
+        int totalOneYearAfter1 = mashaEmployeeUpSalary * year;
+        System.out.println("Маша получает зарплату " + totalOneYearBefore1 + " рублей в год");
+        System.out.println("Маша повышен зарплату на " + mashaEmployeeNew + " рублей за год");
+        System.out.println("Теперь Маша получает " + mashaEmployeeUpSalary + " рублей в месяц");
+        System.out.println("Годовой доход Маши вырос на " + totalOneYearAfter1 + " рублей в год после повышение");
+        int denisEmployeeNew = (denisEmployeeSalary * 10) / 100;
+        int denisEmployeeUpSalary = denisEmployeeNew + denisEmployeeSalary;
+        int totalOneYearBefore2 = denisEmployeeSalary * 12;
+        int totalOneYearAfter2 = denisEmployeeUpSalary * year;
+        System.out.println("Денис получает зарплату " + totalOneYearBefore2 + " рублей в год");
+        System.out.println("Денис повышен зарплату на " + denisEmployeeNew + " рублей за год");
+        System.out.println("Теперь Денис получает " + denisEmployeeUpSalary + " рублей в месяц");
+        System.out.println("Годовой доход Дениса вырос на " + totalOneYearAfter2 + " рублей в год после повышение");
+        int cristinaEmployeeNew = (cristinaEmployeeSalary * 10) / 100;
+        int cristinaEmployeeUpSalary = cristinaEmployeeNew + cristinaEmployeeSalary;
+        int totalOneYearBefore3 = cristinaEmployeeSalary * 12;
+        int totalOneYearAfter3 = cristinaEmployeeUpSalary * year;
+        System.out.println("Кристина получает зарплату " + totalOneYearBefore3 + " рублей в год");
+        System.out.println("Кристина повышен зарплату на " + cristinaEmployeeNew + " рублей за год");
+        System.out.println("Теперь Кристина получает " + cristinaEmployeeUpSalary + " рублей в месяц");
+        System.out.println("Годовой доход Кристины вырос на " + totalOneYearAfter3 + " рублей в год после повышение");
+
+
+
     }
+}
