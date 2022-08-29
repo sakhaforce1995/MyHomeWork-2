@@ -108,20 +108,20 @@ public class Main {
 
         //Задача 6
         System.out.println("Задание 6");
-        float bananas = 5f;
-        bananas = bananas * 0.080f;
+        int bananas = 5;
+        bananas = bananas * 80;
         System.out.println("Бананы " + bananas + " грамм");
-        float milk = 00.20f;
-        milk = milk * 01.50f;
+        int milk = 2;
+        milk = milk * 105;
         System.out.println("Молоко " + milk + " грамм");
-        float iceCream = 0.100f;
-        float briquettes = iceCream * 2;
+        int iceCream = 100;
+        int briquettes = iceCream * 2;
         System.out.println("Морожное пломбир " + briquettes + " грамм");
         int egg = 4;
-        float oneEggGramm = egg * 0.070f;
+        int oneEggGramm = egg * 70;
         System.out.println("Яйца сырые " + oneEggGramm + " грамм");
-        float totalWeight = bananas + milk + briquettes + oneEggGramm;
-        System.out.println("Общий вес " + totalWeight + " кг");
+        int totalWeight = bananas + milk + briquettes + oneEggGramm;
+        System.out.println("Общий вес " + totalWeight + " граммов");
 
         //Задача 7
         System.out.println("Задание 7");
