@@ -121,7 +121,7 @@ public class Main {
         int oneEggGramm = egg * 70;
         System.out.println("Яйца сырые " + oneEggGramm + " грамм");
         int totalWeight = bananas + milk + briquettes + oneEggGramm;
-        System.out.println("Общий вес " + totalWeight + " граммов");
+        System.out.println("Общий вес " + totalWeight + " грамм");
 
         //Задача 7
         System.out.println("Задание 7");
